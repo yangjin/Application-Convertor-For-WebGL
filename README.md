@@ -6,4 +6,7 @@ WebGL is useful for web developers to create fancy 3D application and games. But
 # How to use
 Please follow the user guide in UserGuide folder to setup the environment and convert the WebGL application
 
-* :"Other names and brands may be claimed as the property of others."
+
+
+
+"WebGL*" :"Other names and brands may be claimed as the property of others."
