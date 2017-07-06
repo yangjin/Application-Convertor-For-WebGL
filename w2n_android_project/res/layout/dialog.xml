@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/customDialog"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+<TextView  
+        android:id="@+id/Resolution"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/resolution_option"
+    />
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/customDialog_sub1"
+    android:gravity="center"
+    >
+<TextView  
+	android:id="@+id/Width"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/width1"
+    />
+<EditText  
+    android:id="@+id/WidthE"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/widthvalue"
+    android:minWidth="200dip"
+	android:numeric="integer" 
+    />
+	
+<TextView  
+	android:id="@+id/Height"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/height1"
+    />
+<EditText  
+    android:id="@+id/HeightE"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/heightvalue"
+    android:minWidth="200dip"
+	android:numeric="integer" 
+    />
+</LinearLayout>
+
+<EditText  
+        android:id="@+id/NoW2NData"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/NoW2NData"
+    />
+<TextView  
+        android:id="@+id/AA"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/antialiasing_option"
+    />
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <RadioButton android:id="@+id/RadioNoAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noaa"
+        />
+    <RadioButton android:id="@+id/RadioCMAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cmaa"
+        />
+    <RadioButton android:id="@+id/RadioMSAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msaa"
+        />
+</RadioGroup>
+
+<TextView
+        android:id="@+id/B2T"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/B2T_option"
+    />
+
+    
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/customDialog_sub2"
+    android:gravity="center"
+    >
+
+<CheckBox
+        android:id="@+id/CheckboxTxtData"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="@string/B2T"
+    />
+
+</LinearLayout>
+
+<TextView  
+        android:id="@+id/Profiling"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/debug_mode_option"
+    />
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/customDialog_sub3"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/customDialog_sub3_1"
+    android:gravity="center"
+    >
+
+        <CheckBox
+                android:id="@+id/CheckboxCheckGLError"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:text="@string/check_gl_error"
+        />
+
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/customDialog_sub3_2"
+    android:gravity="center"
+    >
+
+<CheckBox
+        android:id="@+id/CheckboxProfiling"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="@string/profiling_cb"
+    />
+
+<EditText  
+    android:id="@+id/EditTextGLCount"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/profiling_gl_count"
+    android:minWidth="200dip"
+        android:numeric="integer" 
+    />
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
